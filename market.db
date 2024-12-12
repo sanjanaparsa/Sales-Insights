@@ -1,0 +1,27 @@
+CREATE DATABASE  IF NOT EXISTS `sales` 
+USE `sales`;
+
+--
+-- Table structure for table `markets`
+--
+
+DROP TABLE IF EXISTS `markets`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `markets` (
+  `markets_code` varchar(45) NOT NULL,
+  `markets_name` varchar(45) DEFAULT NULL,
+  `zone` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`markets_code`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `markets`
+--
+
+LOCK TABLES `markets` WRITE;
+/*!40000 ALTER TABLE `markets` DISABLE KEYS */;
+INSERT INTO `markets` VALUES ('Mark001','Chennai','South'),('Mark002','Mumbai','Central'),('Mark003','Ahmedabad','North'),('Mark004','Delhi NCR','North'),('Mark005','Kanpur','North'),('Mark006','Bengaluru','South'),('Mark007','Bhopal','Central'),('Mark008','Lucknow','North'),('Mark009','Patna','North'),('Mark010','Kochi','South'),('Mark011','Nagpur','Central'),('Mark012','Surat','North'),('Mark013','Bhopal','Central'),('Mark014','Hyderabad','South'),('Mark015','Bhubaneshwar','South'),('Mark097','New York',''),('Mark999','Paris','');
+/*!40000 ALTER TABLE `markets` ENABLE KEYS */;
+UNLOCK TABLES;
